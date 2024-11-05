@@ -3,189 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profesionální tvorba moderních webových stránek na míru. Webový vývojář Kryštof Kovář, zaměřený na HTML, CSS a JavaScript, nabízí responzivní design pro firmy i jednotlivce.">
-    <meta name="keywords" content="tvorba webových stránek, webový vývojář, portfolio, responzivní design, HTML, CSS, JavaScript, front-end vývoj, zakázkový vývoj webů">    
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/icons/favicon-16x16.png">
-    <title>Kryštof Kovář | Web developer</title>
+    <link rel="icon" href="assets/icon/favicon.png">
+    <title>Fiktivní Kavárna | Lorem ipsum dolor</title>
 </head>
 <body>
-    <header>
 
-        <div class="scroll-indicator">
-            <div class="progress-container">
-              <div class="progress-bar" id="progressBar"></div>
-            </div>
-        </div>
+  <button onclick="topFunction()" id="upBtn" title="Go to top"><img src="assets/icon/arrow.png" alt="up"></button>
+  <header>
 
-        <div class="container">
-            <nav>
-                <!-- Navigační menu -->
-                <ul class="nav-links">
-                    <li><a href="#about">O&nbsp;mně</a></li>
-                    <li><a href="#skills">Dovednosti</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-                <!-- Hamburger menu ikona -->
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </div>      
-    </header>
+    <div class="scroll-indicator">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+          <li>
+              <a id="logo" href="index.html"><img class="logo" src="assets/img/logo-removebg.png" alt="logo"></a>
+          </li>
+          <li>
+              <a class="txt" href="#about" onclick="closeMenu()">O nás</a>
+          </li>
+          <li>
+              <a class="txt" href="#gallery" onclick="closeMenu()">Galerie</a>
+          </li>
+          <li>
+              <a class="txt" href="#contact" onclick="closeMenu()">Kontakt</a>
+          </li>
+          <li>
+              <a class="txt" href="menu.html" onclick="closeMenu()">Menu</a>
+          </li>
+      </ul>
+  </nav>
+
+      <div id="uvod">
+          <h1>Fiktivní Kavárna</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+  </header>
     <main>
 
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="heading">
-                    <p>Ahoj, moje jméno je Kryštof</p>
-                    <h1>Vytvářím moderní weby na míru</h1>
-                    <a href="#portfolio" class="cta-btn">Prozkoumejte mé portfolio</a>
-                </div>
-                <button id="nextSection" aria-label="Zjistit více informací o tvorbě webových stránek">
-                    <div id="dynamic-image">
-                        <p>Zjistit více</p>
-                        <img src="assets/icons/arrow_down.svg" alt="šipka dolů"/>
-                    </div>
-                </button>
-            </div>
-        </section>
-        
 
-        <section id="about" class="about fade-in">
-            <div class="container">
-                <h2 class="slide-up">O mně</h2>
-                <p class="fade-in">Ahoj, moje jméno je Kryštof Kovář. Jsem začínající webový vývojář a zároveň student <a class="highlight" href="https://www.spseol.cz/" target="_blank">střední školy</a>. Zaměřuji se na vývoj moderních webových stránek. Specializuji se na front-end i back-end vývoj a rád vytvářím projekty, které pomáhají firmám, ale i jednotlivcům růst.</p>
-                <p class="fade-in">Pokud máte jakékoliv dotazy, zájem o spolupráci a nebo konzultaci, neváhejte mě <a class="highlight" href="#contact">kontaktovat</a>.</p>    
-                <div class="timeline">
-                    <div class="timeline-item fade-in">
-                        <div class="circle"></div>
-                        <div class="content">
-                            <h3>2024</h3>
-                            <p>Aktuálně hledám další možnosti spolupráce a snažím se obohatit své portfolio.</p>
-                        </div>
+        <section id="about">
+            <div class="about-txt">
+                <h2>O nás</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer vulputate sem a nibh rutrum consequat. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.</p>
+            </div>
+                <div class="about-image">
+                    <div class="about-block">
+                        <img src="assets/img/coffee-reverse.png" alt="káva">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                    <div class="timeline-item fade-in">
-                        <div class="circle"></div>
-                        <div class="content">
-                            <h3>2023</h3>
-                            <p>Sbírání zkušeností, první malý projekt.</p>
-                        </div>
+    
+                    <div class="about-block">
+                        <img src="assets/img/coffee-beans-reverse.png" alt="kávové zrno">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque vel</p>
                     </div>
-                    <div class="timeline-item fade-in">
-                        <div class="circle"></div>
-                        <div class="content">
-                            <h3>2022</h3>
-                            <p>Začátek studia na střední škole a první vytvořený web.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in">
-                        <div class="circle"></div>
-                        <div class="content">
-                            <h3>2021</h3>
-                            <p>Získání prvního certifikátu v oblasti IT.</p>
-                        </div>
+    
+                    <div class="about-block">
+                        <img src="assets/img/moka-pot-reverse.png" alt="moka konvička">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor </p>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="slide-up">Dovednosti</h2>
-                <ul>
-                    <li class="zoom-in"><img class="skills-icon" src="assets/icons/html-icon.png" alt="HTML ikona">HTML</li>
-                    <li class="zoom-in"><img class="skills-icon" src="assets/icons/css-icon.png" alt="CSS ikona">CSS</li>
-                    <li class="zoom-in"><img class="skills-icon" src="assets/icons/js-icon.png" alt="JavaScript ikona">JavaScript</li>
-                    <!-- <li>React, Angular</li>
-                    <li>Node.js, Express.js</li>
-                    <li>PHP, Laravel</li>
-                    <li>MySQL, MongoDB</li> -->
-                </ul>
-            </div>
-        </section>
 
-        <section id="portfolio" class="portfolio slide-up">
-                        <h2>Portfolio</h2>
-            <div class="container">
+        <section id="gallery">
+            <div class="slideshow-container">
 
-                <div class="project zoom-in">
-                    <h3>EVEDER s.r.o.</h3>
-                    <p>Webová vizitka. Použití HTML a CSS pro jednoduchý a čistý design.</p>
-                    <a href="https://www.eveder.cz/" target="_blank" class="btn">Zobrazit web</a>
-                </div>
-
-                <div class="project zoom-in">
-                    <h3>Fiktivní Kavárna</h3>
-                    <p>Fiktivní webová stránka kavárny. Využívá HTML, CSS a JavaScript k vytvoření přívětivého a moderního designu. (Slouží jako ukázková práce. Lorem ipsum slouží jako výplňový text.)</p>
-                    <a href="https://kovarkrystof.github.io/cafe-website-template/index.html" target="_blank" class="btn">Zobrazit web</a>
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="assets/img/slideshow1.jpg" style="width:100%">
                 </div>
                 
-
-                <div class="project zoom-in">
-                    <h3>Na dalších projektech se pracuje...</h3>
-                    <p>Zde najdete popis projektu a technologie, které jsem použil.</p>
-                    <a class="btn">Zobrazit projekt</a>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="assets/img/slideshow2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="assets/img/slideshow3.jpg" style="width:100%">
                 </div>
 
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="assets/img/slideshow4.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
             </div>
         </section>
+
+
+        <section id="contact">
+            <div class="contact-info">
+                <div class="contact-txt">
+                    <h2>Kontakt</h2>
+                    <p class="phone"><a class="txt" class="kontakt-hover" href="tel:000-000-000">000 000 000</a></p>
+                    <p class="mail"><a href="mailto:lorem@ipsum.com"> Lorem@ipsum.com</a></p>
+                    <div class="ikony">
+                        <a href="https://www.instagram.com/" target="_blank"><img class="social-icon" src="assets/icon/instagram.png" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="social-icon" src="assets/icon/facebook.png" alt="facebook"></a>
+                        <a href="https://cz.linkedin.com/" target="_blank"><img class="social-icon" src="assets/icon/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <a class="contact-button" href="contactform.html"><p>Kontaktujte&nbsp;nás<img src="assets/icon/tap.png" alt=""></p></a>
+                </div>
+    
+                <div class="contact-map">
+                    <div class="contact-map">
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82760.95569146176!2d17.18544832570235!3d49.592471580697755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47124e8311181853%3A0x400af0f66159470!2sOlomouc!5e0!3m2!1scs!2scz!4v1718386766699!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+                     
+        </section>
+
+
 
 
     </main>
     <footer>
-        <div class="footer-container">
-            <section class="contact" id="contact">
-                <h2>Kontakt</h2>
-                <div class="contact-container">
-                    <div class="contact-box zoom-in">
-                        <div class="contact-icon">
-                            <img src="assets/icons/placeholder.png" alt="">
-                        </div>
-                        <div class="contact-content">
-                            <h3>Lokace</h3>
-                            <p><a href="https://maps.app.goo.gl/8TMjr9dg1TBeciMWA" target="_blank">Olomouc</a></p>
-                        </div>
-                    </div>
-        
-                    <div class="contact-box zoom-in">
-                        <div class="contact-icon">
-                            <img src="assets/icons/arroba.png" alt="">
-                        </div>
-                        <div class="contact-content">
-                            <h3>Email</h3>
-                            <p><a href="mailto:kovar.krystof@email.cz">kovar.krystof@email.cz</a></p>
-                        </div>
-                    </div>
-        
-                    <div class="contact-box zoom-in">
-                        <div class="contact-icon">
-                            <img src="assets/icons/telephone.png" alt="">
-                        </div>
-                        <div class="contact-content">
-                            <h3>Telefon</h3>
-                            <p><a href="tel:603756114">(+420) 603 756 114</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Tlačítko pro přepínání tmavého režimu -->
-            <button class="theme-toggle-btn" id="themeToggle">
-                <img src="assets/icons/moon.png" id="icon" alt="přepínač barevného režimu">
-            </button>
-    
-            <p>&copy; 2024&nbsp;Všechna&nbsp;práva&nbsp;vyhrazena. Web&nbsp;by&nbsp;Kryštof&nbsp;Kovář.</p>
+        <div class="copyright">
+            <p>&copy;2024 Fiktivní Kavárna. Všechna práva vyhrazena. </p>
+            <p class="madeby">Web by <a class="madebymail" href="mailto:kovar.krystof@email.cz"> kovar.krystof@email.cz</a></p>
         </div>
     </footer>
-    
-    
-
-    <button id="scrollUpBtn" class="scroll-up-btn zoom-in"><img src="assets/icons/arrow.png" alt="UpArrow"></button>
-
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
